@@ -36,3 +36,9 @@ def foo(lst):
 
 
 print(foo([1, 23, 4, 4, 5, "2332", "sdfsdfsd"]))
+
+# This function will only return numbers greater than Zero...
+
+
+def foo(num):
+    return [i for i in num if i > 0]
