@@ -28,3 +28,11 @@ new_tempe = [temper / 10 for temper in tempe if temper == -9999]
 
 
 print(new_tempe)
+
+
+# is instance check if the i is integer, if is will return it
+def foo(lst):
+    return [i for i in lst if isinstance(i, int)]
+
+
+print(foo([1, 23, 4, 4, 5, "2332", "sdfsdfsd"]))
