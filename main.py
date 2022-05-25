@@ -24,6 +24,7 @@ print(new_temps)
 
 tempe = [221, 234, 340, -9999, 230]
 # the if condition will exclude the -9999 because we don't want to calculate this number for being negative
+# Will only divide numbers that are different from -9999
 new_tempe = [temper / 10 for temper in tempe if temper == -9999]
 
 
