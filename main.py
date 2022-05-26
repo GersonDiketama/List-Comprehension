@@ -25,7 +25,7 @@ print(new_temps)
 tempe = [221, 234, 340, -9999, 230]
 # the if condition will exclude the -9999 because we don't want to calculate this number for being negative
 # Will only divide numbers that are different from -9999
-new_tempe = [temper / 10 for temper in tempe if temper == -9999]
+new_tempe = [temper / 10 for temper in tempe if temper != -9999]
 
 
 print(new_tempe)
@@ -43,3 +43,10 @@ print(foo([1, 23, 4, 4, 5, "2332", "sdfsdfsd"]))
 
 def foo(num):
     return [i for i in num if i > 0]
+
+
+temperatures = [221, 234, 340, -9999, 230]
+
+temperature = [temp / 10 if temp != -9999 else 0 for temp in temperatures]
+
+print(temperature)
